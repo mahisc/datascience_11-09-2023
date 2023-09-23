@@ -1,1 +1,1 @@
-print("Hello IIT BHU")
+print ("Hello IIT BHU")
