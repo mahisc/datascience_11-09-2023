@@ -54,3 +54,33 @@ print(len('mahesh is a boy'))
 word_count=len('mahesh is a smart boy')
 print(word_count)
 """this will be a multi-line # comment"""
+print(len('India is greatest country.'))
+
+# methods methods are always connected to object with "." like 'a word'.upper()
+print('upper'.upper())
+test='A word'.upper()
+print(test)
+username= 'jOhnSmIthXX'.title().strip('x')
+print(username)
+print(dir(username))
+print(username.isalpha())
+exercise_string='I like puppies puppies puppies puppies.'.replace('puppies','kitten',2)
+print(exercise_string)
+
+# Return  return is the glue that connects everything in python test_variable="A really" 
+# test_variable="A really" 
+# test_variable="A really"
+# test_variable="A really" 
+# test_variable="A really"
+# test_variable="A really"
+# test_variable="A really" # to comment out use select all _ctrl+forward slash '/' placed with ?.
+"""hi
+/n this is another line explaining """
+a= 1+2+3+4+5\
+    +6+7+8+9
+print(a);print(test)
+        
+print(10//5)
+# math with strings
+x='mahesh';y='singing' # f'string function
+print(f'Hello, my name is {x}.\n My hobby is {y}.')
