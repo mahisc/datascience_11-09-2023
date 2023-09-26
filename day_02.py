@@ -57,3 +57,73 @@ print(test_dict)
 test_dict['D']='dog' # method 3
 print(test_dict)
 
+## sets
+# sets values needs to be unique
+# any duplicate will be deleted.
+my_set={1,2,3,4,5,6,6}
+print(len(my_set))
+print(my_set)
+my_set.add(7) # add value to the set
+print(my_set)
+
+my_set.remove(3) # remove value from the set.
+print(my_set)
+print(list(my_set)[2])
+print(list(my_set))
+
+# indexing and slicing doesn't work in set
+
+print(my_set.pop())
+print(my_set)
+
+
+# !! IMPORTANT !! sets are very good when it comes  to #comparisons.
+
+set1={1,2,3,4,4}
+set2={4,5,6,7,8,9}
+print(set1.union(set2)) # method 1
+print(set1|set2) # method 2 @ preferred.
+
+print(set1 .intersection(set2)) # met  hod 1 
+print(set1 & set2) # method 2
+
+print(set2.difference(set1)) # method 1 
+print(set1.difference(set2))
+print(set2 - set1) # method 2 
+
+# exercise 
+# check if the list below has duplicate values
+test_list1= [1,2,4,5,6,7,8,9,88,66,55,44,33,22,22,21,34,65,76,43,22,53,22,11,10]
+print(len(test_list1))
+print(len(set(test_list1)))
+print(len(test_list1)==(len(set(test_list1)))) # boolean comparsion
+
+# Boolean operators
+"""Usually created by comparison operators; 5<10 creates the boolean 'True'.This is useful to control #flow of code. If condition is True then do something."""
+print(1==10)
+print(1!=10)   
+print(not 10>10)
+# Booleans and lists and strings
+print(1 in (1,2,3,4))
+print('m' in 'hello')
+print(4 not in[1,2,3,5])
+
+# data conversion
+e_dict={1:'one',2:'two',3:'three'} 
+# check if key 1 exits in the dict
+print (1 in e_dict.keys())
+# check if the value 'four' in the dict 
+print('three' in e_dict.values()) 
+# Booleans by themselves
+print(not True)
+print(True)
+
+# Bool function
+# !! IMPORTANT!! bool() can accept any number , string , type of container and still return a value
+ # truthy
+ # Falsy 0,0.0,'',
+print(bool(123))
+print(bool(-12))
+
+# other data types
+#  1 sequence 2 Bytes 3 complex numbers 4 memoryview 5 frozensets  
