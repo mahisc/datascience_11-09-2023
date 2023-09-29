@@ -49,4 +49,30 @@ if money_available > 80:
         print('i am hungry too!')
         if bored== True:
             print('Eat something faancy!!')
-            
+
+# Match case
+mood='Sad'
+match mood :
+    case 'Hungry':
+        print("Get some food Mahesh")
+    case 'Thirsty':
+        print("Get some water")
+    case _:
+        print("out of context!!")
+                     
+# While loop !! Repeat code as long as condition is True
+x=0
+while x<3:
+    x+=1
+    print('loop')
+
+# !! IMPORTANT!! concept of break and continue
+# exercise
+# use a while loop to create a list with only even values from 0 to 100
+# !!Wrong solution !!
+# x=0 
+# while x < 100:
+#     x+=2
+#     print(list[x])
+# !! Wrong solution !!
+
