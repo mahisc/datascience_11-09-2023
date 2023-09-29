@@ -75,4 +75,8 @@ while x<3:
 #     x+=2
 #     print(list[x])
 # !! Wrong solution !!
-
+# a=10;b=1
+# if a!=b:
+#  print('untrue')
+    
+    
