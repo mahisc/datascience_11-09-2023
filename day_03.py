@@ -78,5 +78,86 @@ while x<3:
 # a=10;b=1
 # if a!=b:
 #  print('untrue')
+x=5
+while x<10:
+    x+=1
+    print("hello while loop!!")
+
+#  while will only run if the Boolean value is set to 'True'
+#    !!if Boolean value is false while loop will not execute.!!
+
+# Break !! Ends the entire while loop !!
+
+x=0 
+while x<5:
+    x+=1
+    if x==3:
+        break # break terminates the loop
+    print ("loop is protected")
     
-    
+    # continue !! skips the current iteration!!
+
+x=0
+while x<10:
+    x+=1
+    if x==5:
+        continue # !!! continue skips the loop
+    print(x)
+     
+# exercise
+# use a while loop to create a list with only even values from 0 to 100
+# do not add the value 58!
+
+# my_list=[]
+# counter=0
+# while counter <=100:
+#     if counter%2==0 and counter!=58: 
+#         my_list.append(counter)
+#         counter+=1
+# print(my_list)
+my_list = []
+counter = 0
+while counter<= 100:
+    if counter % 2 ==0 and counter != 58: # method 1 using and condition
+        my_list.append(counter)
+    counter += 1
+print(my_list)
+
+# method 2 using nested if condition 
+my_list = []
+counter = 0
+while counter<= 100:
+    if counter % 2 ==0:
+        if counter != 58: # !! method 2 using nested if condition !!
+            my_list.append(counter)
+    counter += 1
+print(my_list)
+
+# CONCEPT !! for loop !! run code for every item inside of a container 
+basic_list = [1,2,3]
+for x in basic_list:
+    print(x)
+basic_tuple = (1,2,3)
+for x in basic_tuple:
+    print(x)
+basic_set = {1,2,3}
+for x in basic_set:
+    print(x)
+basic_dict= {1:"one",2:"two",3:"three"}
+for x in basic_dict.items():
+    print(x)
+basic_string = 'one two three'
+for x in basic_string:
+    print(x)
+basic_num = 3 # numbers are not irrerable. use range function
+print(range(basic_num)) # range is itself a differnt container 
+for x in range(basic_num):
+    print(x)
+
+# method 2 'for' & 'range' go hand in hand
+for x in range(10,20,2):
+    print(x)
+
+
+# exercise 
+ 
