@@ -160,3 +160,45 @@ for x in range(10,20,2):
 
 
 # exercise 
+# # !! IMPORTANT !! Nested for loops
+from turtle import color
+
+
+practice_list = [[10,40,20,50],[2,42,10],[101,12,4]]
+# use a for loop to only print the numbers below 50
+# skip values below 10
+# end the entire loop if you encounter a value above 100
+for nested_list in practice_list:
+    # print(nested_list)
+    for value in nested_list:
+        if value > 100:
+            break
+        if value < 50:
+            if value < 10:
+                continue
+        print(value)
+
+# Flow and Line Breaks
+# # Ternary Operator !! value True if condition is true else False
+## this is a readable way to write if else  single line statements
+# traditional way
+x = 10
+if x < 5:
+    color = 'red'
+else:
+    color = 'blue'
+print(f"The colour is {color}")
+# ternary operator way !! Advanced way
+x = 1
+color = 'red' if x < 5 else 'blue'
+print(f"The colour is {'red' if x < 5 else 'blue'}")
+a = ['red' if x < 5 else 'blue','green','yellow']
+print(a)
+ 
+## Summery !!
+# 1. We covered some datatypes (int,float,str,bool,list,tuple,set,dict))
+# 2. We covered some operators (+,-,*,/,//,%,**)
+# 3. We covered some flow control (if,elif,else,while,for,match,continue,break)
+# 4. We covered some flow and line breaks (ternary operator)
+# 5. We covered some functions (print,input,type,range,len,append,remove,del,clear,items,keys,values)
+# 6.  how to use functions and methods
